@@ -1,0 +1,133 @@
+* { box-sizing: border-box; }
+body {
+    background-color: teal;
+}
+.col-2{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-gap: 2em;
+}
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+.col-4 {
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+}
+header {
+    display: grid;
+
+}
+h1 {
+    font-weight: 300;
+}
+header h1 {
+    color: white;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 2em 0 1em 0;
+}
+.topnav {
+    margin-top: 5.8em;
+    display: flex;
+    justify-content: flex-end;
+}
+.topnav a {
+    display: block;
+    color: yellow;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 0 0 0 3em;
+}
+.verkefni { 
+    text-align: right;
+    color: white;
+}
+.copy {
+    color: white;
+    text-align: center;
+}
+footer {
+    color: white;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:visited{
+    color:#f7D37E;
+}
+footer li {
+    list-style-type: none;
+    padding-bottom: .25em;
+}
+.beige {
+    padding: 2em;
+}
+.beige2 {
+    height: 101vh;
+    padding-top: 2em;
+}
+.beige, beige2 {
+    background-image: linear-gradient(bottom, #ff8b01 0%, #ffb547 100%), linear-gradient(bottom, #ff8b01 0%, #ffb547 100%);
+    background-image: linear-gradient(to top, #ff8b01 0%, #ffb547 100%), linear-gradient(to top, #ff8b01 0%, #ffb547 100%);
+    padding: 2em;
+}
+.container {
+    max-width: 60em;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+.innermenu {
+    display: flex;
+    flex-flow: row;
+    background-color: darkblue;
+    justify-content: center;
+}
+.innermenu a {
+    display: block;
+    padding: .4em 1.7em;
+    color: #f7D37E;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+}
+.innermenu a:last-child {
+    border: 0;
+}
+blockquote {
+    background-color: white;
+    padding: 1em;
+}
+.topbutt {
+    background-color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: darkblue;
+    font-size: 2.5em;
+    display: block;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    width: 1.5em;
+    padding-bottom: 0 .2em;
+
+}
+.topbutt:hover, .topbutt:active {
+    background-color: teal;
+    color: white;
+}
+.pR1em {
+    padding-right: 1em;
+}
+pL2em {
+    padding-left: 2em;
+}
+.om { 
+    margin: 0;
+}
+.svart {
+    color: yellow;
+    text-decoration-line: underline;
+}

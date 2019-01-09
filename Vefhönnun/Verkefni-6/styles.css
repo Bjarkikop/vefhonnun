@@ -1,0 +1,262 @@
+    * {
+    box-sizing: border-box; 
+  }
+  
+  .topnav {
+  grid-area: topnav; 
+  }
+  header {
+  grid-area: header;
+  }
+  .content {
+  grid-area: content; 
+  }
+  footer {
+  grid-area: footer;
+  }
+  /*Content */
+  .midja {
+  grid-area: midja; 
+  }
+  .vinstri {
+  grid-area: vinstri;
+  }
+  .haegri {
+  grid-area: haegri; 
+  }
+  
+  /* Grid Template Areas*/
+  
+  body {
+  display: grid;
+  grid-gap: 0; 
+  grid-template-areas:
+    "topnav"
+    "header"
+    "content"
+    "footer"
+    ;
+  }
+  .content {
+  display: grid;
+  grid-gap: 0;
+  grid-template-areas:
+    "midja"    
+    "vinstri"
+    "haegri"
+  }
+  body {
+  line-height: 1.5em;
+  }
+  .topnav {
+  background: #1c2d1c; 
+  }
+  header {
+  background: black; 
+  }
+  footer {
+  background: black ;
+  color: white; 
+  }
+  .midja {
+  background: red; 
+  border: brown solid;
+  }
+  .marvel {
+    color: white;
+    width: 30em;
+  }
+  .vinstri {
+  background: white;
+  border: brown solid; 
+  }
+  .japan {
+    color: red;
+  }
+  .haegri {
+  background: black;
+  border: brown solid;
+  }
+  .floyd {
+    color: white;
+  }
+  .pink {
+    color: pink;
+  }
+  header,
+  footer,
+  .midja,
+  .vinstri, 
+  .haegri {
+  padding: 1em; 
+  }
+  header h1 {
+  color: #fff;
+  line-height: 1.2;
+  font-weight: normal;
+  }
+  .midja h2 {
+  margin: .7em 0 .8em 0;
+  }
+  .midja h4 {
+  text-align: justify;
+  margin: .4em 0;
+  }
+  .midja p {
+  text-align: justify;
+  }
+  
+  /* Efnisyfirlit (mobile) */
+  .topnav ul{
+  background: brown; 
+  }
+  .topnav input {
+  display: none;
+  }
+  
+  .topmenu {
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none; 
+  border: brown solid;
+  
+  }
+  .topmenu li {
+  border: 0;
+  border-bottom: 1px solid lime; 
+  padding: 0;
+  margin:0;
+  }
+  .topmenu a {
+  display: block;    
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: .4em 1em; 
+  }
+  .topmenu a:hover,
+  .topmenu a:active,
+  .virkur {
+  color: black !important;
+  background-color: lime;
+  }
+  
+  /*myndvinnsla */
+  img, video {
+  max-width: 100%;
+  height: auto;
+  }
+  img {
+  display: block;
+  }
+  figure {
+  margin:0;
+  border: 1px solid orange;
+  }
+  .myndabox {
+  width: 162px;
+  }
+  /* 30em = 480px + */
+  
+  @media screen and (min-width: 30em) {
+  
+    .myndabox {
+      /* ath! */
+      display: grid;
+      grid-template-columns: 162px 162px;
+    }
+    .spacey {
+      width: 480px;
+      height: 200px;
+    }
+  }
+  
+  /* 37.5em = 600px + */
+  
+  @media screen and (min-width: 37.5em) {
+  
+    .content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-areas:
+    "midja vinstri"    
+    "midja haegri"
+    }
+  }
+  /* 48em = 760px + */
+  
+  @media screen and (min-width: 48em) {  
+    .topmenu {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+      }
+      .topmenu li {
+      border: 0;
+      border-left: 1px solid lime; 
+      }
+      .content {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "vinstri midja haegri"
+        "vinstri midja haegri"
+      }
+      .spacey {
+        max-width: 100%;
+        height: 160px;
+      }
+      .picture {
+        max-width: 100%;
+        height: 280px;
+      }
+  }
+    /* 60em = 960px + */
+  
+  @media screen and (min-width: 60em) { 
+    body { 
+      max-width: 58em; 
+      margin: 0 auto;
+    }
+    .content {
+        display: grid; 
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "vinstri midja haegri"    
+    }
+    .myndabox {
+      /* skipti yfir í eina röð */
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "midja midja"
+      "vinstri vinstri"
+      "haegri haegri"
+    }
+  
+  }
+  /* 80em = 1280px + */
+  
+  @media screen and (min-width: 80em) { 
+    body { 
+      max-width: 77em;
+      margin: 0 auto;
+    }
+    .content {
+      /* 3 dálka */
+        display: grid; 
+        grid-template-columns: 1fr 2.5fr;
+        grid-template-areas: 
+        "vinstri midja"
+        "haegri midja"    
+    }
+    .myndabox {
+        display: grid;
+        grid-template-columns: repeat(4 , 100%);
+    }
+    .spacey {
+      width: 1600px;
+      height: 500px;
+    }
+  }

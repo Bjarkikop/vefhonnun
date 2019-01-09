@@ -1,0 +1,82 @@
+body {
+    max-width: 60em;
+    margin: 0 auto;
+    line-height:  1.5;
+    font-family: 'open-sans', Times, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "topnav"
+    "header"
+    "content"
+    "footer"
+}
+header {
+    grid-area: header;
+    background-color: lightblue;
+    border-color: burlywood;   
+}
+.topnav {
+    grid-area: topnav;
+    border: 4px solid burlywood;
+}
+.content {
+    grid-area: content;
+    background-color: burlywood;
+    border-color: lightblue;
+}
+footer {
+    grid-area: footer;
+    border: 4px solid burlywood;
+    background-color: lightblue;
+}
+header {
+    border: 4px solid burlywood;
+    text-align: center;
+}
+nav {
+    border: 1px solid yellow;
+}
+
+.topmenu {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: .5em 0;
+    list-style-type: none;
+    background-color: black;
+}
+.content {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: "midja vinstri haegri";
+    border: 4px solid burlywood;
+}
+/*dálkar í content*/
+.midja {
+    grid-area: midja;
+}
+.vinstri {
+    grid-area: vinstri;
+}
+.haegri {
+    grid-area: haegri;
+}
+p {
+    padding: 0 1em;
+}
+.topmenu a {
+    text-decoration: none;
+    color: yellow;
+    padding: .5em;
+}
+.topmenu a:hover, .topmenu a:active {
+    background-color: yellow;
+    color: brown;
+}
+.topmenu a.virkur {
+color: black;
+background-color: yellow; 
+}

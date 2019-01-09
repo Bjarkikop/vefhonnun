@@ -1,0 +1,149 @@
+* { box-sizing: border-box; }
+body {
+    background-color: burlywood;
+}
+.col-2{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-gap: 2em;
+}
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+header {
+    display: grid;
+}
+h1 {
+    font-weight: 300;
+}
+header h1 {
+    color: black;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 2em 0 1em 0;
+    border: green solid;
+    background-color: lightgreen;
+}
+.topnav {
+    margin-top: 5.8em;
+    display: flex;
+    justify-content: flex-end;
+}
+.topnav a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 0 0 0 3em;
+}
+.verkefni { 
+    text-align: right;
+    color: black;
+}
+footer {
+    max-width: 60em;
+    margin: 5em;
+    margin: 0em 1em 0em;
+    background-color: lightgreen;
+    width: 100%;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+}
+footer a:visited{
+    color:#f7D37E;
+}
+footer li {
+    list-style-type: none;
+    padding-bottom: .25em;
+}
+.beige {
+    padding: 2em;
+}
+.beige2 {
+    height: 101vh;
+    padding-top: 2em;
+}
+.beige, beige2 {
+    background-image: linear-gradient(burlywood 90%, green);
+    padding: 2em;
+}
+.container {
+    max-width: 60em;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+.innermenu {
+    display: flex;
+    flex-flow: row;
+    background-color: green;
+    justify-content: center;
+}
+.innermenu a {
+    display: block;
+    padding: .4em 1em;
+    color: black;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+}
+.innermenu a:last-child {
+    border: 0;
+}
+blockquote {
+    background-color: white;
+    padding: 1em;
+    max-width: 28em;
+    border: white solid;
+    background-image: linear-gradient(white 90%, lightgreen);
+}
+.topbutt {
+    background-color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: green;
+    font-size: 2.5em;
+    display: block;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    width: 1.5em;
+    padding-bottom: 0 .2em;
+
+}
+.topbutt:hover, .topbutt:active {
+    background-color: teal;
+    color: white;
+}
+.svart {
+    color: black;
+    text-decoration-line: underline;
+}
+img {
+    max-width: 100%;
+    height: 110px;
+}
+img .prufa {
+    border: #fff solid;
+    max-width: 100%;
+    height: 50px;
+}
+.queen {
+    width: 400px;
+    height: 300px;
+}
+.video {
+    float: auto;
+}
+.texti {
+    background-color: white;
+    padding: 1em;
+    max-width: 28em;
+    border: white solid;
+    background-image: linear-gradient(white 90%, lightgreen);
+}
+.mapouter {
+    margin: 0 auto 0 auto;
+} 
