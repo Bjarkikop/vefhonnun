@@ -11,3 +11,9 @@
  git status - sýnir file sem þú hefur modified
  git diff - sýnir mun(diffrences)
 
+3
+
+ git log - sýnir history á branch
+ git checkout - skiptir frá branch og updatear directory sem þú ert staddur
+ git branch - býr til nýtt branch
+
