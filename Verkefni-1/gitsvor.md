@@ -17,3 +17,9 @@
  git checkout - skiptir frá branch og updatear directory sem þú ert staddur
  git branch - býr til nýtt branch
 
+ Version Control - Version Control er kerfi sem skráir breytingar á skrá eða sett af skrám svo að þú getir fengið tilteknar útgáfur síðar.
+
+ kostir við Git - Þú getur fengið file frá vefnum, aðrir geta séð hvað þú hefur gert, getur unnið sem back-up fyrir file 
+
+ *Working Directory heldur um file
+ *stagin area er indexið
