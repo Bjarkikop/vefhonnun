@@ -1,5 +1,5 @@
 ---
-lauout: default
+layout: default
 title: Verkefni-2. Jekyll vefsíða
 ---
 
