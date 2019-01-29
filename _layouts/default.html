@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="" />
 </head>
 <body>
+    <h1>{{ page.title | upcase }}</h1>
     {% include navigation.html %}
-
-    {{ content }}
+    <main>{{ content }}</main>
 </body>
 </html>

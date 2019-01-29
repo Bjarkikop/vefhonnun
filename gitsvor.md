@@ -1,3 +1,8 @@
+---
+layout: default
+title: Git Svör
+---
+### Verkefni 1
 1
  cd = Change directory
  ls = directory listing
